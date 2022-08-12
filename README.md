@@ -1,1 +1,1 @@
-# newlogic-g2p-erp
+# openspp-communication

@@ -14,7 +14,7 @@
     "maintainers": ["jeremi", "gonzalesedwin1123"],
     "external_dependencies": {
         "python": [
-            "twilio.rest",
+            "twilio",
             "boto3",
         ]
     },

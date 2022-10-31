@@ -7,7 +7,7 @@
     "version": "15.0.0.0.2",
     "sequence": 1,
     "author": "OpenSPP.org",
-    "website": "https://github.com/openspp-project/openspp-communication",
+    "website": "https://github.com/openspp/openspp-communication",
     "license": "AGPL-3",
     "depends": ["iap", "sms", "mass_mailing_sms", "g2p_registry_base", "g2p_programs"],
     "development_status": "Beta",

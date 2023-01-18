@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2022-11-25 13:22+0000\n"
+"PO-Revision-Date: 2023-01-18 12:56+0000\n"
 "Last-Translator: Fawaz Nari <fawaz.t.nari@gmail.com>\n"
 "Language-Team: Arabic <https://translate.openspp.org/projects/openspp/"
 "spp_sms/ar/>\n"
@@ -89,8 +89,9 @@ msgstr "مجموعة"
 
 #. module: spp_sms
 #: model:ir.model.fields,field_description:spp_sms.field_mailing_mailing__mailing_registrant_group_ids
+#, fuzzy
 msgid "Groups"
-msgstr ""
+msgstr "العوائل"
 
 #. module: spp_sms
 #: model:ir.model,name:spp_sms.model_iap_account

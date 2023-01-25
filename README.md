@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[spp_sms](spp_sms/) | 15.0.0.0.2 | [![jeremi](https://github.com/jeremi.png?size=30px)](https://github.com/jeremi) [![gonzalesedwin1123](https://github.com/gonzalesedwin1123.png?size=30px)](https://github.com/gonzalesedwin1123) | OpenSPP SMS
+[spp_sms](spp_sms/) | 15.0.1.0.1-dev | [![jeremi](https://github.com/jeremi.png?size=30px)](https://github.com/jeremi) [![gonzalesedwin1123](https://github.com/gonzalesedwin1123.png?size=30px)](https://github.com/gonzalesedwin1123) | OpenSPP SMS
 
 [//]: # (end addons)
 

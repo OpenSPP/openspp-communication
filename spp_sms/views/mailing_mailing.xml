@@ -36,7 +36,7 @@
                         string="Individual"
                         attrs="{'invisible': ['|',('mailing_registrant_type', '!=', 'Individual'), ('mailing_model_name', '!=', 'res.partner')]}"
                     >
-                    <tree string="Individual" editable="bottom">
+                    <tree editable="bottom">
                       <field
                                 name="registrant_id"
                                 string="Name"
@@ -52,7 +52,7 @@
                         string="Group"
                         attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Group'), ('mailing_model_name', '!=', 'res.partner')]}"
                     >
-                    <tree string="Group" editable="bottom">
+                    <tree editable="bottom">
                       <field
                                 name="registrant_id"
                                 string="Name"
@@ -67,7 +67,7 @@
                         string="Program"
                         attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Program'), ('mailing_model_name', '!=', 'res.partner')]}"
                     >
-                    <tree string="Program" editable="bottom">
+                    <tree editable="bottom">
                       <field name="program_id" string="Name" required="1" options="{'no_create': True}" />
                     </tree>
                   </field>
@@ -76,7 +76,7 @@
                         string="Cycle"
                         attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Cycle'), ('mailing_model_name', '!=', 'res.partner')]}"
                     >
-                    <tree string="Cycle" editable="bottom">
+                    <tree editable="bottom">
                       <field name="cycle_id" string="Name" required="1" options="{'no_create': True}" />
                     </tree>
                   </field>

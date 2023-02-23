@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-02-23 01:30+0000\n"
+"PO-Revision-Date: 2023-02-24 02:22+0000\n"
 "Last-Translator: Ammar ALBAYATI <ammar.albayati@wfp.org>\n"
 "Language-Team: Arabic <https://translate.openspp.org/projects/openspp/"
 "spp_sms/ar/>\n"
@@ -101,7 +101,7 @@ msgstr ""
 #. module: spp_sms
 #: model:ir.model.fields,field_description:spp_sms.field_spp_mailing_registrants__id
 msgid "ID"
-msgstr "بطاقة تعريف"
+msgstr ""
 
 #. module: spp_sms
 #: model:ir.model.fields,field_description:spp_sms.field_mailing_mailing__mailing_registrant_individual_ids

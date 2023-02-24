@@ -6,6 +6,7 @@ on:
       - "15.0*"
   push:
     branches:
+      - "rc/*"
       - "15.0"
       - "15.0-ocabot-*"
 

@@ -12,14 +12,14 @@
                         widget="radio"
                         options="{'horizontal': true}"
                         invisible="1"
-                        attrs="{'readonly': [('state', '!=', 'draft')]}"
+                        readonly="state != 'draft'"
                         force_save="1"
                     />
                   <field
                         class="o_text_overflow"
                         name="subject"
                         string="Subject"
-                        attrs="{'readonly': [('state', 'in', ('sending', 'done'))]}"
+                        readonly="state in ('sending', 'done')"
                         widget="char_emojis"
                         placeholder="e.g. New Sale on all T-shirts"
                     />
@@ -29,12 +29,12 @@
                   <field
                         name="mailing_registrant_type"
                         string="Contact Type"
-                        attrs="{'invisible': [('mailing_model_name', '!=', 'res.partner')]}"
+                        invisible="mailing_model_name != 'res.partner'"
                     />
                   <field
                         name="mailing_registrant_individual_ids"
                         string="Individual"
-                        attrs="{'invisible': ['|',('mailing_registrant_type', '!=', 'Individual'), ('mailing_model_name', '!=', 'res.partner')]}"
+                        invisible="mailing_registrant_type != 'Individual' or mailing_model_name != 'res.partner'"
                     >
                     <tree editable="bottom">
                       <field
@@ -50,7 +50,7 @@
                   <field
                         name="mailing_registrant_group_ids"
                         string="Group"
-                        attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Group'), ('mailing_model_name', '!=', 'res.partner')]}"
+                        invisible="mailing_registrant_type != 'Group' or mailing_model_name != 'res.partner'"
                     >
                     <tree editable="bottom">
                       <field
@@ -65,7 +65,7 @@
                   <field
                         name="mailing_program_ids"
                         string="Program"
-                        attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Program'), ('mailing_model_name', '!=', 'res.partner')]}"
+                        invisible="mailing_registrant_type != 'Program' or mailing_model_name != 'res.partner'"
                     >
                     <tree editable="bottom">
                       <field name="program_id" string="Name" required="1" options="{'no_create': True}" />
@@ -74,7 +74,7 @@
                   <field
                         name="mailing_cycle_ids"
                         string="Cycle"
-                        attrs="{'invisible': ['|', ('mailing_registrant_type', '!=', 'Cycle'), ('mailing_model_name', '!=', 'res.partner')]}"
+                        invisible="mailing_registrant_type != 'Cycle' or mailing_model_name != 'res.partner'"
                     >
                     <tree editable="bottom">
                       <field name="cycle_id" string="Name" required="1" options="{'no_create': True}" />
@@ -84,8 +84,8 @@
                         name="mailing_domain"
                         widget="domain"
                         options="{'model': 'mailing_model_real'}"
-                        attrs="{'readonly': [('state', 'in', ('sending', 'done'))],
-                    'invisible': [('mailing_model_name', '!=', 'res.partner')]}"
+                        readonly="state in ('sending', 'done')"
+                        invisible="mailing_model_name != 'res.partner'"
                     />
               </group>
           </xpath>

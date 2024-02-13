@@ -12,20 +12,23 @@
                   <field name="company_ids" position="move" />
               </group>
           </xpath>
-          <xpath expr="//group[@name='account']/field[@name='company_ids']" position="attributes">
+          <!-- field is not existing anymore in 17.0 -->
+          <!-- <xpath expr="//group[@name='account']/field[@name='company_ids']" position="attributes">
             <attribute name="invisible">1</attribute>
-          </xpath>
-          <xpath expr="//group[@name='account']/field[@name='service_name']" position="attributes">
+          </xpath> -->
+
+          <!-- field is not existing anymore in 17.0 -->
+          <!-- <xpath expr="//group[@name='account']/field[@name='service_name']" position="attributes">
             <attribute name="invisible">1</attribute>
-          </xpath>
+          </xpath> -->
           <xpath expr="//group[@name='account']" position="attributes">
-            <attribute name="attrs">{'invisible': [('provider', '!=', 'odoo')]}</attribute>
+            <attribute name="invisible">provider != 'odoo'</attribute>
           </xpath>
           <xpath expr="//group[@name='account']" position="after">
               <group
                     string="Twilio account"
                     name="twilio"
-                    attrs="{'invisible': [('provider', '!=', 'sms_twilio')]}"
+                    invisible="provider != 'sms_twilio'"
                 >
                   <field name="sms_twilio_account_id" />
                   <field name="sms_twilio_token_id" />
@@ -36,7 +39,7 @@
               <group
                     string="Amazon SNS account"
                     name="twilio"
-                    attrs="{'invisible': [('provider', '!=', 'sns_amazon')]}"
+                    invisible="provider != 'sns_amazon'"
                 >
                   <field name="sns_amazon_key" />
                   <field name="sns_amazon_secret" />
